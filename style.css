@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Urbanist', sans-serif;
+    background-color: rgba(236, 231, 231, 0.547);
+}
+.section1{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(./homepage-product-office-space-1.jpg);
+    background-size: cover;
+    position: relative;
+
+   
+}
+.navbag{
+    background-color: rgba(225, 220, 220, 0.532);
+}
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 80%;
+   
+}
+.navbar .logo{
+    width: 3rem;
+    border-radius: 50%;
+}
+.navbar .navicons{
+    display: flex;
+    align-items: center;
+  
+}
+.navbar .navicons img{
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .5s ease;
+
+}
+.navbar .navicons img:hover{
+    transform: scale(1.1);
+}
+.navbar .navicons img:not(:last-child){
+    margin-right: .6rem;
+}
+.navbar nav {
+
+}
+.navbar nav ul{
+    list-style: none;
+    display: flex;
+
+}
+.navbar nav ul li:not(:last-child){
+    margin-right: 1rem;
+
+}
+.navbar nav ul li a:link, .navbar nav ul li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700%;
+    color: black;
+    padding-bottom: 3.3rem;
+
+}
+.navbar nav ul li a:hover{
+    color: rgb(55, 55, 207);
+    border-bottom: 2px solid rgb(55, 55, 207) ;
+}
+.section1 .detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 h1{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 6.5rem;
+    font-weight: 300;
+    color: aliceblue;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 2px black;
+}
+.section1 p{
+    color: rgb(247, 218, 182);
+    font-weight: 400;
+    margin: 4rem 0 12rem 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+   
+}
+.section1 button{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-color: rgb(39, 118, 229);
+    border: none;
+    color: aliceblue;
+    width: 15rem;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    width: 80%;
+    
+}
+.section2 .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 .info >h1{
+    font-size: 7rem;
+    font-weight: 300;
+    text-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.396);
+
+}
+.section2 .info > p{
+margin: 3rem 0;
+width: 65rem;
+text-align: center;
+font-size: 1.7rem;
+font-weight: 500;
+}
+.section2 .cards{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+  
+}
+.section2 .cards .card{
+    
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 2rem 2rem 2rem ;
+
+}
+.section2 .cards .card > img{
+    width: 7rem;
+    margin-bottom: 3rem;
+
+}
+.section2 .cards .card > h3{
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+
+}
+.section2 .cards .card .cardinfo{
+    padding: 0 2rem 2rem 2rem;
+    transition: all .7s ease;
+}
+.section2 .cards .card .cardinfo >p{
+    margin: 3rem auto;
+}
+.section2 .cards .card .cardinfo >a:link, .section2 .cards .card .cardinfo >a:visited{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize ;
+    text-decoration: none;
+  visibility: hidden;
+  transition: all .15s ease;
+
+ 
+}
+.section2 .cards .card .cardinfo >a>img{
+    width: 3rem;
+    height: 3rem;
+    padding: .7rem;
+    border: 2px solid rgb(114, 114, 250);
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+.section2 .cards .card:hover .cardinfo{
+    background-color: lightgray;
+}
+.section2 .cards .card:hover .cardinfo > a{
+    visibility: visible;
+}
+.section3 .imgcards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section3 .imgcards .imgcard{
+    width: 30%;
+}
+.section3 .imgcards .imgcard .imgsection{
+    background-image: url(./mobile.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-position: -120px 100%;
+    position: relative;
+}
+.section3 .imgcards .imgcard .imgsection > h3{
+    color: rgb(10, 10, 10);
+    text-transform: uppercase;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+  background-color: rgba(225, 220, 220, 0.463);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.section3 .imgcards .imgcard > p {
+    margin-top: 1rem;
+}
+
+.section4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pexels-pixabay-302769.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.section4 .smallbox{
+    width: 80%;
+    margin: 0 auto;
+    color: aliceblue;
+    
+}
+.section4 .smallbox h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-bottom: 7rem;
+}
+.section4 .smallbox .smallboxcards{
+    display: flex;
+    justify-content: space-between;
+}
+.section4 .smallbox .smallboxcards .smallboxcard{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    padding: 2rem;
+    transition: all .5s ease-out;
+}
+section4 .smallbox .smallboxcards .smallboxcard:hover{
+transform: translateY(-1rem);
+}
+.section4 .smallbox .smallboxcards .smallboxcard > img{
+ width: 12rem;
+ height: 12rem;
+ filter: invert(100%);
+ padding: 2.7rem .35rem;
+ border: 2px solid black;
+ border-radius: 50%;
+
+}
+.section4 .smallbox .smallboxcards .smallboxcard > span{
+    margin: 3rem 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.section4 .smallbox .smallboxcards .smallboxcard > p{
+text-align: center;
+    
+}
+
+.footer{
+display: flex;
+height: 32vh;
+padding:5rem;
+justify-content: space-between;
+background-color: rgb(220, 219, 217);
+}
+.footer .left{
+
+    padding: 1rem;
+
+}
+.footer .left img{
+    width: 5rem;
+
+}
+.footer .center{
+  
+    
+   
+}
+.footer .center>h3{
+font-size: 2.7rem;
+font-weight: 400;
+text-transform: capitalize;
+margin-bottom: 2rem;
+border-bottom: 3px solid rgb(72, 72, 250);
+padding-bottom: 4px;
+}
+.footer .center> ul{
+    list-style: none;
+
+}
+.footer .center> ul>li:not(:last-child){
+    margin-bottom: .7rem;
+
+}
+.footer .center> ul>li>a:link,
+.footer .center> ul>li>a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: all .3s ease;
+
+}
+.footer .center> ul>li>a:hover{
+    color: rgb(72, 72, 250);
+}
+.footer .right{
+ 
+   
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.footer .right> h3{
+    font-size: 2.7rem;
+font-weight: 400;
+text-transform: capitalize;
+margin-bottom: 2rem;
+border-bottom: 3px solid rgb(72, 72, 250);
+padding-bottom: 4px;
+
+}
+.footer .right > a:link,.footer .right > a:visited{
+    text-decoration: none;
+    color: black;
+    margin-bottom: .7rem;
+
+}
+.footer .right > a:hover{
+    color: blueviolet;
+}
